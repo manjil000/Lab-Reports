@@ -1,26 +1,31 @@
 #include <iostream>
 using namespace std;
 
-class Distance {
-    int meters;
+class Demo {
+    int id;
 public:
-    // Constructor: converts int to Distance
-    Distance(int m) {
-        meters = m;
+    Demo(int i) {
+        id = i;
+        cout << "Constructor called for ID: " << id << endl;
+    }
+
+    ~Demo() {
+        cout << "Destructor called for ID: " << id << endl;
     }
 
     void show() {
-        cout << "Distance: " << meters << " meters" << endl;
+        cout << "Object ID: " << id << endl;
     }
 };
 
 int main() {
-    int d = 100;
+    Demo d1(1);
+    {
+        Demo d2(2);  // Local scope
+        d2.show();
+    } // d2 is destroyed here
 
-    // Basic to User-defined: int → Distance
-    Distance dist = d;  // invokes constructor
+    d1.show();
 
-    dist.show();
-
-    return 0;
+    return 0; // d1 is destroyed here
 }
