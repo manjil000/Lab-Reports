@@ -1,2 +1,0 @@
-//virtual function always in derived class(use garnai parxa)
-//what is abstract class in c++?? --> those class which are pure or virtual function, that donn't let create function
