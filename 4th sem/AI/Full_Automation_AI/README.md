@@ -20,7 +20,19 @@ You do **not** need to touch the mouse or keyboard while it runs, and it never t
 10. [Optional tweaks](#10-optional-tweaks)
 11. [Troubleshooting](#11-troubleshooting)
 
----
+
+### (THis is a  very imp step) How to make output of your name ===> Replace your Name in VS Code that's  it!!
+
+Note: if this step is not performed and the code is ran, then the output may have different names. Also 'asd123' is  fixed below [type as it is]
+
+1. Open the AI_LAB folder in VS Code. (the entire folder)
+2. Press **Ctrl + H** to open **Find and Replace**.
+   - (**Ctrl + F** opens plain **Find** only. It lets you search but not replace. Press Ctrl + H when you want to replace.)
+   - On macOS use **Cmd + F** and **Cmd + Option + F**.
+3. Type asd123 and the type <YOUR_FULL_NAME> in  second box with '>' this arrow.
+4. Click **Replace All** (the double arrow icon), or press **Ctrl + Alt + Enter**.
+
+
 
 ## 1. What you need
 
@@ -46,10 +58,9 @@ Pick **one** of the two ways.
 ### Option B: Git clone
 
 ```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git clone https://github.com/manjil000/Lab-Reports.git
+cd Lab-Reports/4th\ sem/AI/Artificial\ Intelligence\ labs/lab_codes
 ```
-
-Replace the link with the real link from the green **Code** button.
 
 Then open the folder in VS Code: **File > Open Folder...**
 
@@ -70,9 +81,11 @@ AI_Lab/                          <-- ROOT folder
 |-- Lab 3/                       <-- spaces are fine too
 |-- Lab 4/
 |-- Lab 5/
-|   `-- perceptron.py
+|   `-- mazesolver.py and others
 `-- Lab_6/
+    -- perceptron.py
     `-- tic_tac_toe_compact_layout.py
+    -- others...
 ```
 
 Important rules:
@@ -103,16 +116,10 @@ python -m pip install pillow
 
 After downloading, the script still points at **the original author's folder**. You must change it so it points at **your** folder.
 
-### How to open Find and Replace in VS Code
-
-1. Open `automate_screenshots.py` in VS Code.
-2. Press **Ctrl + H** to open **Find and Replace**.
-   - (**Ctrl + F** opens plain **Find** only. It lets you search but not replace. Press Ctrl + H when you want to replace.)
-   - On macOS use **Cmd + F** and **Cmd + Option + F**.
-3. Type what to find in the first box and the new text in the second box.
-4. Click **Replace All** (the double arrow icon), or press **Ctrl + Alt + Enter**.
 
 ### Change 1: your folder path (REQUIRED)
+
+Else the output will contain others name(i.e Prassidha)
 
 | Find | Replace with |
 |------|--------------|
@@ -315,7 +322,7 @@ Use **Ctrl + F** to jump to any of these names at the top of the script, then ed
 | `TIMEOUT` | `30` | Seconds before a stuck program is stopped |
 | `FONT_SIZE` | `18` | Text size in the screenshots |
 | `COLS` | `110` | Width of the "terminal" before long lines wrap |
-| `MAX_ROWS` | `45` | Maximum lines per image. Lower = more, shorter images. Higher = fewer, taller images |
+| `MAX_ROWS` | `70` | Maximum lines per image. Lower = more, shorter images. Higher = fewer, taller images | #note if u want your image size to be short make this 45
 | `STEP_FRAMES` | `True` | Save a screenshot after each input for screen-style programs |
 | `RANDOM_SEED` | `7` | Controls the automatic human moves |
 | `BG`, `FG`, `PROMPT`, `ERR` | colours | Background, text, prompt line and error colours (R, G, B) |
@@ -343,6 +350,6 @@ Use **Ctrl + F** to jump to any of these names at the top of the script, then ed
 
 1. Download the project and extract it.
 2. `pip install pillow`
-3. In `automate_screenshots.py`, press **Ctrl + H** and replace `D:\pty\Python\Prassidha\AI_Lab` with your own folder path.
+3. In `automate_screenshots.py`, press **Ctrl + H** and replace `D:\pty\Python\Prassidha\AI_Lab` with your own folder path + replace the names inside lab_codes to your name(open the whole folder in vscode).
 4. Run `python automate_screenshots.py`.
 5. Open the `screenshots` folder inside your project. Done.

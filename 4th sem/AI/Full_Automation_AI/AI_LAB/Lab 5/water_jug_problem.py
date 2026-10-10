@@ -1,5 +1,5 @@
 # Lab: Water Jug Problem
-# Program by: Rahul Bista
+# Program by: asd123
 # Roll no: 25
 
 from collections import deque
@@ -85,5 +85,5 @@ def water_jug_bfs(capA, capB, target):
 # Main program
 print()
 water_jug_bfs(4, 3, 2)
-print("Program by: Rahul Bista")
+print("Program by: asd123")
 print("Roll No: 25")
